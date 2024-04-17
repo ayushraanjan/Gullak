@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #fafafa;
+            background-image: url("{% static 'base/images/funkyimg.jpg' %}"); /* Specify the URL of your image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+
+        .container {
+            max-width: 350px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background-color: #fafafa;
+        }
+
+        button[type="submit"] {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: black;
+        }
+
+        .or-divider {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .or-divider hr {
+            border-top: 1px solid #dbdbdb;
+            margin: 0;
+        }
+
+        .or-text {
+            background-color: #fafafa;
+            padding: 0 10px;
+            position: relative;
+            top: -12px;
+            display: inline-block;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Styling for GULLAK */
+        .gullak {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 42px;
+            color: black;
+        }
+
+        .box {
+            width: 400px; /* Width of the box */
+            height: 630px; /* Height of the box */
+            background-color: #f0f0f0; /* Background color of the box */
+            border: 2px solid #000; /* Border style */
+            border-radius: 10px; /* Border radius for rounded corners */
+            padding: 20px; /* Padding inside the box */
+            box-sizing: border-box; /* Include padding and border in box dimensions */
+            margin: 0 auto; /* Center the box horizontally */
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- GULLAK -->
+        <div class="box">
+            <div class="gullak">Gullak</div>
+            <form method="POST">
+                {% csrf_token %}
+                {{form}}
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="or-divider">
+                <hr>
+                <div class="or-text">OR</div>
+                <div></div>Already have an account<a href="#"> Log in</a>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
