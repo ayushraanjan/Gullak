@@ -1,4 +1,6 @@
-# GULLAK 
-Gullak is a new age pocket money app for kids. In this app Parents can create Tasks and when the children do the job, a part of the pocket money gets credited to the account of the kid.
-
-This app makes the kid do the job which he has been assigned to him. It increases the financial literacy of the kid. It initiates a feeling of responsibility in the child. 
+# Gullak  
+Gullak is a mordern pocket money app designed for children it introduces children to the concept of earning things and asking for them 
+The benefits of this app over other apps are 
+1. Crearting a sense of Earning
+2. Introduces financial literacy to children
+3. Make the children do their job
